@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
-.myHeader.ant-layout-header {
+.title {
   color: white;
+}
+.myHeader{
+  background-color: #0B0A05;
 }

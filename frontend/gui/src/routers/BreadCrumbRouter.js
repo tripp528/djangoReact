@@ -14,13 +14,17 @@ class BreadCrumbRouter extends React.Component {
             render={props => (
               <CustomCrumbItem {...props} name={`List`} />
             )} />
-        <Route path='/:articleID'
+        <Route path='/detail/:articleID'
             render={props => (
               <CustomCrumbItem {...props} name={`Detail`} />
             )} />
-        <Route path='/:articleID/analyzed'
+        <Route path='/detail/:articleID/analyzed'
             render={props => (
               <CustomCrumbItem {...props} name={`Analysis`} />
+            )} />
+        <Route path='/create'
+            render={props => (
+              <CustomCrumbItem {...props} name={`Create`} />
             )} />
       </Breadcrumb>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Button } from 'antd';
 
 import Articles from "../components/Articles";
 
@@ -20,7 +21,13 @@ class ArticleList extends React.Component {
 
   render() {
     return (
-      <Articles data={this.state.articles} />
+      <div>
+        <Articles data={this.state.articles} />
+        <Button
+          href='create'>
+          Create
+        </Button>
+      </div>
     );
   }
 }

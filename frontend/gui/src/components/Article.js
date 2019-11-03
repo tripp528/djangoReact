@@ -7,7 +7,7 @@ import axios from 'axios';
 class Article extends React.Component {
 
   render() {
-    const href = this.props.articleID + "/analyzed"
+    const href = "/detail/" + this.props.articleID + "/analyzed"
     return (
       <Card size="small" title={this.props.article.title}>
         <p>{this.props.article.content}</p>
