@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { List, Avatar } from 'antd';
+import { List } from 'antd';
 
 const Articles = (props) => {
   return (
@@ -10,7 +10,6 @@ const Articles = (props) => {
       renderItem={item => (
         <List.Item>
           <List.Item.Meta
-            avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
             title={<a href={`/${item.id}`}>{item.title}</a>}
             description={item.content}
           />
